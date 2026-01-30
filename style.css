@@ -25,8 +25,17 @@ main {
 
 p {
   font-size: 1.25rem;
-  padding: 0 24px;
-  margin: 16px 0;
+  /* padding: 0 24px; */
+  /* margin: 16px 0; */
+  margin: 1rem 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  color: #009966;
 }
 
 .max-width-wrapper {
@@ -42,21 +51,27 @@ p {
 }
 
 .title {
-  margin: 48px 0;
-  padding: 0 24px;
+  /* margin: 48px 0; */
+  /* margin: 3rem 0; */
+  margin: 2rem 0;
+  /* padding: 0 24px; */
 }
 
 .card {
-  padding: 0 24px;
+  padding: 24px;
+  /* padding-top: 8px; */
   border-bottom: 8px solid #999999;
 }
 
 .indented-heading {
   max-width: max-content;
   margin: 0 -32px;
+  margin-top: -16px;
   margin-right: 0; /* keep right margin at 0 */
+  margin-bottom: 1rem;
   /* 32+24 = 56 to align with p tags; 32 nullifies the -32 margin */
-  padding: 16px 56px;
+  /* padding: 16px 56px; */
+  padding: 16px 32px;
   background-color: #ffbf00;
   border-bottom: 8px solid #cc9900;
 }
