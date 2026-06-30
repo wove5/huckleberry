@@ -53,7 +53,8 @@ strong {
 .title {
   /* margin: 48px 0; */
   /* margin: 3rem 0; */
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+  margin: 32px 0; /* use px for non-typography measurements */
   /* padding: 0 24px; */
 }
 
@@ -68,7 +69,25 @@ strong {
   margin: 0 -32px;
   margin-top: -16px;
   margin-right: 0; /* keep right margin at 0 */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  /* use px for non-typography measurements.
+     It may not be obvious for the 1rem, 
+     that when changes are made to browser's default font size
+     (because rem values scale with the user's default font size)
+     this margin-bottom should also scale and look out of proportion;
+     but not so much at 1rem; it would be noticibly out of proportion
+     if it were at least 2rem, even more so 2.5rem and above.
+     I am reflecting on Josh's comment:
+     "The Web Content Accessibility Guidelines (WCAG) state that in
+     order to be accessible, a site should be usable at 200% zoom.
+     I've heard from accessibility advocates that this number is
+     really a minimum, and that many folks with vision disorders
+     often crank much higher than that". The 200% magnification
+     considered as a minium to have any visible effect, whether
+     by browser zoom or user font scaling, has parallels here
+     with regard to noticing adverse effect of using rem units for
+     the non-typography measurements */
+  margin-bottom: 16px;
   /* 32+24 = 56 to align with p tags; 32 nullifies the -32 margin */
   /* padding: 16px 56px; */
   padding: 16px 32px;
